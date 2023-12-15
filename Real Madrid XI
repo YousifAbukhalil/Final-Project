@@ -1,0 +1,61 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+// Function to display player information
+void displayPlayer(int number, const string& position, const string& name) {
+    cout << "Player " << number << " (" << position << "): " << name << endl;
+}
+
+int main() {
+    int playerNumber;
+
+    // Ask the user for input
+    cout << "Enter the player number: ";
+    cin >> playerNumber;
+
+    // Starting XI players
+    if (playerNumber == 7)
+        displayPlayer(7, "Left Wing", "Vini Jr");
+    else if (playerNumber == 9)
+        displayPlayer(9, "Center Forward", "Endrick");
+    else if (playerNumber == 11)
+        displayPlayer(11, "Right Wing", "Rodrygo");
+    else if (playerNumber == 5)
+        displayPlayer(5, "Center Attacking Midfield", "Jude Bellingham");
+    else if (playerNumber == 15)
+        displayPlayer(15, "Center Midfielder", "Federico Valverde");
+    else if (playerNumber == 23)
+        displayPlayer(23, "Center Midfielder", "Arda Guler");
+    else if (playerNumber == 12)
+        displayPlayer(12, "Left Back", "Eduardo Camavinga");
+    else if (playerNumber == 3)
+        displayPlayer(3, "Center Back", "Eder Militao");
+    else if (playerNumber == 16)
+        displayPlayer(16, "Center Back", "Aurelien Tchouameni");
+    else if (playerNumber == 19)
+        displayPlayer(19, "Right Back", "Fran Garcia");
+    else if (playerNumber == 1)
+        displayPlayer(1, "Goalkeeper", "Thibaut Courtois");
+
+    // Bench players
+    else if (playerNumber == 8)
+        displayPlayer(8, "Central Midfielder", "Toni Kroos");
+    else if (playerNumber == 10)
+        displayPlayer(10, "Central Midfielder", "Luka Modric");
+    else if (playerNumber == 4)
+        displayPlayer(4, "Center Back", "David Alaba");
+    else if (playerNumber == 2)
+        displayPlayer(2, "Right Back", "Dani Carvajal");
+    else if (playerNumber == 29)
+        displayPlayer(29, "Striker", "Nico Paz");
+    else if (playerNumber == 33)
+        displayPlayer(33, "Center Forward", "Gonzalo Garcia");
+    else if (playerNumber == 27)
+        displayPlayer(27, "Center Back", "Antonio Rudiger");
+    else
+        cout << "Player not found.";
+
+    return 0;
+}
